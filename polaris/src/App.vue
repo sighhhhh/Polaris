@@ -1,47 +1,28 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div :id="dynamicID" :class="dynamicClass"> {{ title }} </div>
+  <p>{{ welecome }}</p>
+  <button :disabled="isBtnDisabled" class="button-29" role="button">Click Here !</button>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script>
+export default {
+  data() {
+    return {
+      title: "Polaris",
+      welecome: "Hello! Welecome to Polaris !",
+      dynamicID: "AppID",
+      dynamicClass: "AppClass",
+      isBtnDisabled: false
+    }
+  }
 }
+</script>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+.AppClass {
+  color: rgb(59, 47, 122);
+  font-size: 50px;
 }
 </style>
