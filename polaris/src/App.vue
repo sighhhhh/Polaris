@@ -22,6 +22,14 @@ export default {
     }
   }
 }
+
+fetch('https://api.exam')
+
+const {proxy} = getCurentInstances()
+proxy.$http.get('api/getNewsList')
+.then((Response) => {
+  console.log(Response)
+})
 </script>
 
 <style>
