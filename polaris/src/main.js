@@ -1,7 +1,14 @@
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import './assets/style/btn_29.css'
-import './assets/style/btn_53.css'
+
+import './assets/layout/home.css'
+
+import './assets/style/box/box_25.css'
+
+import './assets/style/button/btn_29.css'
+import './assets/style/button/btn_53.css'
+import './assets/style/button/btn_85.css'
+import './assets/style/button/btn_86.css'
 
 createApp(App).mount('#app')

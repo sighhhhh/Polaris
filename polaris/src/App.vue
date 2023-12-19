@@ -3,10 +3,14 @@
 <template>
   <div :id="dynamicID" :class="dynamicClass"> {{ title }} </div>
   <p>{{ welecome }}</p>
-  <button :disabled="isBtnDisabled" class="button-29" role="button">Click Here !</button>
+  <textarea class="box_25">Input Here !</textarea><br>
+  <button :disabled="isBtnDisabled" class="button-29" role="button">Click Here !</button><br>
+  <button :disabled="isBtnDisabled" class="button-85" role="button">Click Here !</button><br>
+  <button :disabled="isBtnDisabled" class="button-86" role="button">Click Here !</button><br>
 </template>
 
 <script>
+
 export default {
   data() {
     return {
