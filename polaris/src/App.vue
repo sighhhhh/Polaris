@@ -1,17 +1,21 @@
-
-
 <template>
-  <div :id="dynamicID" :class="dynamicClass"> {{ title }} </div>
-  <p>{{ welecome }}</p>
-  <textarea class="box_25">Input Here !</textarea><br>
-  <button :disabled="isBtnDisabled" class="button-29" role="button">Click Here !</button><br>
-  <button :disabled="isBtnDisabled" class="button-85" role="button">Click Here !</button><br>
-  <button :disabled="isBtnDisabled" class="button-86" role="button">Click Here !</button><br>
+  <div class="container">
+    <header> {{ title }} </header>
+    <div class="main">
+      <div class="main-content">
+        <router-view></router-view>
+      </div>
+      <aside class="sidebar sidebar-left">Left Sidebar</aside>
+      <aside class="sidebar sidebar-Right">Right Sidebar</aside>
+    </div>
+    <footer>Footer</footer>
+  </div>
 </template>
 
 <script>
 
 export default {
+  name:'App',
   data() {
     return {
       title: "Polaris",
@@ -22,14 +26,6 @@ export default {
     }
   }
 }
-
-fetch('https://api.exam')
-
-const {proxy} = getCurentInstances()
-proxy.$http.get('api/getNewsList')
-.then((Response) => {
-  console.log(Response)
-})
 </script>
 
 <style>
