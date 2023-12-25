@@ -1,10 +1,8 @@
 
 import { createApp } from 'vue'
 import App from './App.vue'
-// import axios from 'axios'
-// const app = createApp(app)
-// app.config.globalProperties.$http = axios
 
+import './assets/layout/layout.css'
 import './assets/style/box/box_25.css'
 
 import './assets/style/button/btn_29.css'
