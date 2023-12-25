@@ -9,6 +9,7 @@
   </header>
   <div class="divider"></div>
   <div class="sidebar">
+    <div class="project-name">Menu</div>
     <ul>
       <li><a href="">HOME</a></li>
       <li><a href="">Combine</a></li>
@@ -16,7 +17,6 @@
       <li><a href="">Polish Characters</a></li>
     </ul>
   </div>
-  <button id="toggle-sidebar"> > </button>
   <footer>{{ welecome }}</footer>
 </template>
 
