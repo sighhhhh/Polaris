@@ -1,24 +1,35 @@
 * {
-    color: #fff;
+    color: #000;
 }
+
 header {
     background-color: #fff;
-    color: rgba(29, 34, 187, 0.719);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: inherit;
+}
+
+.project-name {
+    color: rgb(72, 66, 107);
+    width: max-content;
     font-family: serif;
-    font-size: xx-large;
+    font-size: 50px;
     font-weight: 900;
 }
+
 .main {
     background-color: rgba(25, 30, 175, 0.719);
     max-height: 300px;
 }
+
 .center {
     color: #fff;
     text-align: center;
     max-height: 100%;
     margin-left: 120px;
     margin-right: 120px;
-} 
+}
+
 .left {
     color: #fff;
     float: left;
@@ -26,15 +37,18 @@ header {
     height: 100%;
     position: relative;
 }
+
 .right {
     color: #fff;
     float: right;
-    width: 100px;        
+    width: 100px;
     height: 100%;
     position: relative;
 }
+
 footer {
-    background-color:rgba(29, 34, 187, 0.719);
+    background-color: rgba(29, 34, 187, 0.719);
+    color: #fff;
     position: absolute;
     text-align: center;
     left: 0;
