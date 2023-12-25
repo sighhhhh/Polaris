@@ -2,19 +2,28 @@
     color: #000;
 }
 
+html {
+    left: 0;
+    top: 0;
+}
+
+body {
+    margin: 0;
+}
+
 header {
     background-color: #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: inherit;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
 .project-name {
-    color: rgb(72, 66, 107);
+    color: rgb(53, 64, 100);
     width: max-content;
     font-family: serif;
     font-size: 50px;
     font-weight: 900;
+    padding-left: 15px;
 }
 
 .main {
@@ -23,11 +32,11 @@ header {
 }
 
 .center {
-    color: #fff;
+    color: #000;
     text-align: center;
     max-height: 100%;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 240px;
+    margin-right: 240px;
 }
 
 .left {
@@ -47,7 +56,7 @@ header {
 }
 
 footer {
-    background-color: rgba(29, 34, 187, 0.719);
+    background-color: rgb(65, 82, 136);
     color: #fff;
     position: absolute;
     text-align: center;

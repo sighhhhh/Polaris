@@ -5,6 +5,7 @@ import App from './App.vue'
 import './assets/layout/layout.css'
 import './assets/layout/divider.css'
 import './assets/layout/menu.css'
+import './assets/layout/sidebar.css'
 
 import './assets/style/box/box_25.css'
 

@@ -1,17 +1,23 @@
 <template>
-  <div class="container">
-    <header>
-      <div class="project-name"> {{ title }} </div>
-      <ul>
-        <li><a href="">Support</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact us</a></li>
-      </ul>
-    </header>
-    <div class="divider"></div>
-
-    <footer>{{ welecome }}</footer>
+  <header>
+    <ul>
+      <li><a href="">Support</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <div class="project-name"> {{ title }} </div>
+  </header>
+  <div class="divider"></div>
+  <div class="sidebar">
+    <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">Combine</a></li>
+      <li><a href="">Carrot</a></li>
+      <li><a href="">Polish Characters</a></li>
+    </ul>
   </div>
+  <button id="toggle-sidebar"> > </button>
+  <footer>{{ welecome }}</footer>
 </template>
 
 <script>
@@ -23,4 +29,11 @@ export default {
     }
   }
 }
+
+const toggleButton = document.querySelector('#toggle-sidebar');
+const sidebar = document.querySelector('.sidebar');
+
+toggleButton.addEventListener('click', function () {
+  sidebar.classList.toggle('show-sidebar');
+});
 </script>

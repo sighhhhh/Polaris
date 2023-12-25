@@ -1,4 +1,5 @@
 .divider {
     color: #ededed;
-    border-top: 3px solid #879de7;
+    border-top: 3px solid rgb(65, 82, 136);
+    position: relative;
 }

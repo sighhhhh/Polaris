@@ -1,29 +1,28 @@
 ul {
     list-style-type: none;
     float: right;
+    margin-top: 0px;
+    margin-right: 10px;
     position: relative;
     overflow: hidden;
     background-color: #fff;
-
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 
 li {
     float: left;
     position: relative;
+    margin-right: 10px;
 }
 
 li a {
     display: block;
-    color: rgba(29, 34, 187, 0.719);
+    color: rgb(53, 64, 100);
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 17px;
     text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 li a:hover {
