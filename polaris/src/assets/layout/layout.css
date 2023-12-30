@@ -7,59 +7,52 @@ html {
     top: 0;
 }
 
-body {
-    margin: 0;
-}
-
 header {
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
     padding-top: 0px;
     padding-left: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+side-nav,
+body {
+    padding: 0;
+    margin-top: 0;
+    width: 380px;
+    height: 100%;
+}
+
+main-nav,
+body {
+    width: 100%;
 }
 
 .project-name {
     color: rgb(53, 64, 100);
     width: max-content;
+    text-align: center;
     font-family: serif;
     font-size: 50px;
     font-weight: 900;
     padding-left: 15px;
 }
 
-.main {
-    background-color: rgba(25, 30, 175, 0.719);
-    max-height: 300px;
-}
-
-.center {
-    color: #000;
-    text-align: center;
-    max-height: 100%;
-    margin-left: 240px;
-    margin-right: 240px;
-}
-
-.left {
-    color: #fff;
-    float: left;
-    width: 100px;
-    height: 100%;
-    position: relative;
-}
-
-.right {
-    color: #fff;
-    float: right;
-    width: 100px;
-    height: 100%;
-    position: relative;
-}
 
 footer {
     background-color: rgb(65, 82, 136);
     color: #fff;
-    position: absolute;
     text-align: center;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
