@@ -9,19 +9,24 @@
     <div class="divider"></div>
   </header>
 
-  <div class="sidebar side-nav box-shadow-25">
-    <div class="project-name">Menu</div>
-    <ul style="padding-left: 0;">
-      <menu-li><a href="">HOME</a></menu-li>
-      <menu-li><a href="">Combine</a></menu-li>
-      <menu-li><a href="">Carrot</a></menu-li>
-      <menu-li><a href="">Polish Characters</a></menu-li>
-    </ul>
-  </div>
 
-  <main-area>
-    <p>123456789</p>
-  </main-area>
+  <main>
+    <menu-mask class="box-shadow-25">
+      <div class="project-name">Menu</div>
+    </menu-mask>
+    <div class="sidebar box-shadow-25">
+      <menu-ul>
+        <menu-li><a href="">HOME</a></menu-li>
+        <menu-li><a href="">Combine</a></menu-li>
+        <menu-li><a href="">Carrot</a></menu-li>
+        <menu-li><a href="">Polish Characters</a></menu-li>
+      </menu-ul>
+    </div>
+
+    <div class="main-area">
+      <div class="project-name">Here is the Main area</div>
+    </div>
+  </main>
 
 
   <footer>{{ welecome }}</footer>
@@ -36,5 +41,4 @@ export default {
     }
   }
 }
-
 </script>
