@@ -11,8 +11,10 @@
 
 
   <main>
-    <menu-mask class="box-shadow-25">
-      <div class="project-name">Menu</div>
+    <menu-mask class="box-shadow-25" style="padding-top: 25%;">
+      <p class="project-name" style="width: 380px;">
+        Menu
+      </p>
     </menu-mask>
     <div class="sidebar box-shadow-25">
       <menu-ul>
