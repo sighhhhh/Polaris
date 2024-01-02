@@ -11,12 +11,12 @@
 
 
   <main>
-    <menu-mask class="box-shadow-25" style="padding-top: 25%;">
+    <div id="menu-mask" v-if="isVisible" @mouseover="hidemenu">
       <p class="project-name" style="width: 380px;">
         Menu
       </p>
-    </menu-mask>
-    <div class="sidebar box-shadow-25">
+    </div>
+    <div class="sidebar box-shadow-25" @mouseleave="showmenu">
       <menu-ul>
         <menu-li><a href="">HOME</a></menu-li>
         <menu-li><a href="">Combine</a></menu-li>
@@ -40,6 +40,15 @@ export default {
     return {
       title: "Polaris",
       welecome: "Welecome to Polaris ! sighhh0704@gmial.com",
+      isVisible : true
+    };
+  },
+  methods: {
+    hidemenu(){
+      this.isVisible = false;
+    },
+    showmenu(){
+      this.isVisible = true;
     }
   }
 }
