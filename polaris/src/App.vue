@@ -11,11 +11,11 @@
 
 
   <main>
-    <div :class="{'hidden':isHide}" v-if="!isHide" @mouseover="hidemenu" id="menu-mask">
+    <transition v-show="isVisible" @mouseover="hidemenu" id="menu-mask">
       <p class="project-name" style="width: 380px;">
         Menu
       </p>
-    </div>
+    </transition>
     <div class="sidebar box-shadow-25" @mouseleave="showmenu">
       <menu-ul>
         <menu-li><a href="">HOME</a></menu-li>
@@ -29,8 +29,7 @@
       <div class="project-name">Here is the Main area</div>
     </div>
   </main>
-
-
+  
   <footer>{{ welecome }}</footer>
 </template>
 
@@ -40,15 +39,15 @@ export default {
     return {
       title: "Polaris",
       welecome: "Welecome to Polaris ! sighhh0704@gmial.com",
-      isHide : false
+      isVisible : true
     };
   },
   methods: {
     hidemenu(){
-      this.isHide = true;
+      this.isVisible = false;
     },
     showmenu(){
-      this.isHide = false;
+      this.isVisible = true;
     }
   }
 }

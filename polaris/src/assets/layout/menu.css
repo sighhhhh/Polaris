@@ -74,10 +74,36 @@ title-li a:hover {
     text-align: center;
     z-index: 1;
     background-color: #fff;
-    transition: all 1s ease;
+    /* transform: translateX(0px);
+    transition: transform 1s ease; */
+}
+
+#menu-mask.visible {
+    animation-name: move-in;
+    animation-duration: 1 s;
+    /* transform: translateX(0px); */
 }
 
 #menu-mask.hidden {
-    transform: translateX(-100%);
-    opacity: 0;
+    animation-name: move-out;
+    animation-duration: 1 s;
+    /* transform: translateX(-100%); */
+}
+
+@keyframes move-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes move-out {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
