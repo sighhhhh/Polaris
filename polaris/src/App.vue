@@ -15,21 +15,20 @@
       <p class="project-name" style="width: 380px;">
         Menu
       </p>
-    </div>
-    <div class="sidebar box-shadow-25" @mouseleave="showmenu">
-      <menu-ul>
-        <menu-li><a href="">HOME</a></menu-li>
-        <menu-li><a href="">Combine</a></menu-li>
-        <menu-li><a href="">Carrot</a></menu-li>
-        <menu-li><a href="">Polish Characters</a></menu-li>
-      </menu-ul>
-    </div>
+      </transition>
+      <div class="sidebar box-shadow-25" @mouseleave="showmenu">
+        <menu-ul>
+          <menu-li><a href="">HOME</a></menu-li>
+          <menu-li><a href="">Combine</a></menu-li>
+          <menu-li><a href="">Carrot</a></menu-li>
+          <menu-li><a href="">Polish Characters</a></menu-li>
+        </menu-ul>
+      </div>
 
-    <div class="main-area">
-      <div class="project-name">Here is the Main area</div>
-    </div>
+      <div class="main-area">
+        <div class="project-name">Here is the Main area</div>
+      </div>
   </main>
-
 
   <footer>{{ welecome }}</footer>
 </template>

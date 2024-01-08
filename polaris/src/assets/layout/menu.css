@@ -74,7 +74,7 @@ title-li a:hover {
     text-align: center;
     z-index: 1;
     background-color: #fff;
-    transition: transform 1s ease-in-out;
+    transition: all 1s ease;
 }
 
 #menu-mask.hidden {
