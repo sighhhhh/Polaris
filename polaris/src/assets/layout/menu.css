@@ -79,5 +79,5 @@ title-li a:hover {
 
 #menu-mask.hidden {
     transform: translateX(-100%);
-    opacity: 0;
+    /* opacity: 0; */
 }

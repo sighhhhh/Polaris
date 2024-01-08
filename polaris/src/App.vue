@@ -9,31 +9,33 @@
     <div class="divider"></div>
   </header>
 
-
   <main>
-    <div :class="{ 'hidden': isHide }" v-if="!isHide" @mouseover="hidemenu" id="menu-mask">
+    <Transition :class="{ 'hidden': isHide }" v-show="!isHide" @mouseover="hidemenu" id="menu-mask">
       <p class="project-name" style="width: 380px;">
         Menu
       </p>
-      </transition>
-      <div class="sidebar box-shadow-25" @mouseleave="showmenu">
-        <menu-ul>
-          <menu-li><a href="">HOME</a></menu-li>
-          <menu-li><a href="">Combine</a></menu-li>
-          <menu-li><a href="">Carrot</a></menu-li>
-          <menu-li><a href="">Polish Characters</a></menu-li>
-        </menu-ul>
-      </div>
+    </Transition>
 
-      <div class="main-area">
-        <div class="project-name">Here is the Main area</div>
-      </div>
+    <div class="sidebar box-shadow-25" @mouseleave="showmenu">
+      <menu-ul>
+        <menu-li><a href="">HOME</a></menu-li>
+        <menu-li><a href="">Combine</a></menu-li>
+        <menu-li><a href="">Carrot</a></menu-li>
+        <menu-li><a href="">Polish Characters</a></menu-li>
+      </menu-ul>
+    </div>
+
+    <div class="main-area">
+      <div class="project-name">Here is the Main area</div>
+    </div>
   </main>
 
   <footer>{{ welecome }}</footer>
 </template>
 
 <script>
+import { Transition } from 'vue';
+
 export default {
   data() {
     return {
@@ -49,6 +51,7 @@ export default {
     showmenu() {
       this.isHide = false;
     }
-  }
+  },
+  components: { Transition }
 }
 </script>
