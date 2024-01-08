@@ -11,7 +11,7 @@
 
 
   <main>
-    <div :class="{'hidden':isHide}" v-if="!isHide" @mouseover="hidemenu" id="menu-mask">
+    <div :class="{ 'hidden': isHide }" v-if="!isHide" @mouseover="hidemenu" id="menu-mask">
       <p class="project-name" style="width: 380px;">
         Menu
       </p>
@@ -40,14 +40,14 @@ export default {
     return {
       title: "Polaris",
       welecome: "Welecome to Polaris ! sighhh0704@gmial.com",
-      isHide : false
+      isHide: false
     };
   },
   methods: {
-    hidemenu(){
+    hidemenu() {
       this.isHide = true;
     },
-    showmenu(){
+    showmenu() {
       this.isHide = false;
     }
   }
